@@ -9,9 +9,10 @@
     "routes": [
         {
             "src": "/getBlogs",
+            "methods": ["GET"],
             "dest": "/"
         },
-        {
+    {
             "src": "/(.*)",
             "dest": "/"
         }
