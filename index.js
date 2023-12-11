@@ -33,7 +33,7 @@ mongoose.connect('mongodb://localhost:27017/your-database-name', {
     console.error('Error connecting to MongoDB:', err);
   });
 
-app.get("/getBlogs", async (req, res) => {
+app.get("/getBlogs" , async (req, res) => {
   const blogs = await Blog.find();
   res.json(blogs);
 });
