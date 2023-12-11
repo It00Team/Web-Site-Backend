@@ -6,20 +6,15 @@
             "use": "@vercel/node"
         }
     ],
-    "functions": {
-        "api/getBlogs": {
-            "maxDuration": 3000 
-        }
-    },
     "routes": [
         {
-            "src": "/api/getBlogs",
+            "src": "/getBlogs",
             "methods": ["GET"],
-            "dest": "/index.js"
+            "dest": "/"
         },
-        {
+    {
             "src": "/(.*)",
-            "dest": "/index.js"
+            "dest": "/"
         }
     ]
 }
